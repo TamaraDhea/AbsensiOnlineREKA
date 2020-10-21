@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".karyawan.FormKaryawanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+        <com.faltenreich.skeletonlayout.SkeletonLayout
+            android:id="@+id/skeletonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NIK :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/editTextBG"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAMA LENGKAP :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_nama_lengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/editTextBG"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO. TELP :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_no_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/editTextBG"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="E-MAIL :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/editTextBG"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DIVISI :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/sp_divisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:popupTextAlignment="start"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SHIFT :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/sp_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:popupTextAlignment="start"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="USERNAME :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/editTextBG"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PASSWORD :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBG"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    tools:ignore="TextFields" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* password tidak perlu di isi jika tidak ingin diganti"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#F44336"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bg_blue_outline"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simpan "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        app:drawableEndCompat="@drawable/ic_outline_save_24"
+                        tools:ignore="HardcodedText"
+                        app:drawableTint="@color/colorPrimary" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.faltenreich.skeletonlayout.SkeletonLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

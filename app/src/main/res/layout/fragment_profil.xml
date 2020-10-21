@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".profil.ProfilFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIK : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/edt_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:enabled="false"
+            android:background="@drawable/bg_grey_outline"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA LENGKAP : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/edt_nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_grey_outline"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO. TELP : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/edt_no_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_grey_outline"
+            tools:ignore="Autofill,HardcodedText" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_grey_outline"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USERNAME : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@drawable/bg_grey_outline"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD : "
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey_outline"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* password tidak perlu di isi jika tidak ingin diganti"
+            android:textSize="10sp"
+            android:paddingHorizontal="5dp"
+            android:textColor="#F44336"
+            tools:ignore="HardcodedText,SmallSp" />
+        <LinearLayout
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/bg_blue_outline"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan Perubahan "
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_outline_save_24"
+                android:drawableTint="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

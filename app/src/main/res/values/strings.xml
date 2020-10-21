@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">REKA - Absensi Online</string>
+    <string name="logo_reka">logo reka</string>
+    <string name="absensi_android_based_system_reka">Absensi Online Berbasis Android-Based \nPT. Rekaindo Global Jasa</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profil">Profil</string>
+    <string name="shift">Shift</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="section">Section</string>
+    <string name="karyawan">Karyawan</string>
+    <string name="absensi">Absensi</string>
+    <string name="logout">Logout</string>
+    <string name="absen">Absen</string>
+    <string name="absensiku">Absensiku</string>
+    <string name="nik">NIK</string>
+    <string name="tambah_shift">Tambah Shift</string>
+    <string name="add_button">add_button</string>
+    <string name="tambah_section">Tambah Section</string>
+    <string name="tambah_karyawan">Tambah Karyawan</string>
+    <string name="tambah_lokasi">Tambah Lokasi</string>
+    <string name="maps_api_key">AIzaSyCGvcxU9WgMOjYQ0eMO96WQrAPdzh_shyQ</string>
+    <string name="nama">Nama</string>
+    <string name="divisi">Divisi</string>
+    <string name="tampilkan">Tampilkan</string>
+    <string name="absen_pulang">Absen Pulang</string>
+    <string name="absen_masuk">Absen Masuk</string>
+</resources>

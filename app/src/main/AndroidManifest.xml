@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ptrekaindo.absensi">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_reka"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_reka"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore="UnusedAttribute">
+        <activity android:name=".absensi.AbsenHarianActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".absensi.DetailAbsenActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".absensi.DaftarKaryawanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".lokasi.FormLokasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".karyawan.FormKaryawanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.FormSectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shift.EditShiftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shift.TambahShiftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".assets.helpers.IntroApps"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
